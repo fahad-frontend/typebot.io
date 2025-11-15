@@ -1,1 +1,5 @@
+# Add common bun installation paths to PATH so Git hooks can find the binary without extra setup
+export PATH="$HOME/.bun/bin:/opt/homebrew/bin:$PATH"
+
+# Run the actual Husky pre-commit script with the environment we just prepared
 bun pre-commit
