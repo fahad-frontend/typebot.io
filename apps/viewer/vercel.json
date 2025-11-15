@@ -3,7 +3,10 @@
     "silent": true
   },
   "functions": {
-    "**/*": {
+    "src/pages/api/**/*.{ts,tsx,js,jsx}": {
+      "maxDuration": 10
+    },
+    "src/app/api/**/*.{ts,tsx,js,jsx}": {
       "maxDuration": 10
     }
   }
