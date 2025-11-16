@@ -373,13 +373,9 @@ const BotContent = (props: BotContentProps) => {
           onProgressUpdate={setProgressValue}
           onScriptExecutionSuccess={props.onScriptExecutionSuccess}
         />
-        <Show
-          when={
-            props.initialChatReply.typebot.settings.general?.isBrandingEnabled
-          }
-        >
-          {/* <LiteBadge botContainer={botContainer} /> */}
-        </Show>
+        {/* {props.initialChatReply.typebot.settings.general?.isBrandingEnabled && (
+          <LiteBadge botContainer={botContainer} />
+        )} */}
         <Toaster toaster={toaster} class="w-full">
           {(toast) => (
             <Toast.Root class="flex flex-col pl-4 py-4 pr-8 gap-2 max-w-[350px] rounded-chat text-input-text border-input border-input-border bg-input-bg shadow-input data-[state=open]:animate-fade-in-from-bottom data-[state=closed]:animate-fade-out-from-bottom">
