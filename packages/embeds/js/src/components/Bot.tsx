@@ -43,7 +43,7 @@ import { buttonVariants } from "./Button";
 import { ChatContainer } from "./ConversationContainer/ChatContainer";
 import { ErrorMessage } from "./ErrorMessage";
 import { CloseIcon } from "./icons/CloseIcon";
-import { LiteBadge } from "./LiteBadge";
+// import { LiteBadge } from "./LiteBadge";
 import { ProgressBar } from "./ProgressBar";
 
 export type BotProps = {
@@ -378,7 +378,7 @@ const BotContent = (props: BotContentProps) => {
             props.initialChatReply.typebot.settings.general?.isBrandingEnabled
           }
         >
-          <LiteBadge botContainer={botContainer} />
+          {/* <LiteBadge botContainer={botContainer} /> */}
         </Show>
         <Toaster toaster={toaster} class="w-full">
           {(toast) => (
